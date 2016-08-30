@@ -5,7 +5,7 @@ export default {
 	plugins: [ buble() ],
 	external: [ 'path', 'fs', 'builtin-modules', 'resolve', 'browser-resolve' ],
 	targets: [
-		{ dest: 'dist/rollup-plugin-node-resolve.cjs.js', format: 'cjs' },
-		{ dest: 'dist/rollup-plugin-node-resolve.es.js', format: 'es' }
+		{ dest: 'dist/rollup-plugin-node-resolve-jail.cjs.js', format: 'cjs' },
+		{ dest: 'dist/rollup-plugin-node-resolve-jail.es.js', format: 'es6' }
 	]
 };

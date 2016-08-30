@@ -1,6 +1,6 @@
 {
-  "name": "rollup-plugin-node-resolve",
-  "description": "Bundle third-party dependencies in node_modules",
+  "name": "rollup-plugin-node-resolve-jail",
+  "description": "Bundle third-party dependencies in node_modules (with jail feature)",
   "version": "2.0.0",
   "devDependencies": {
     "buble": "^0.13.2",
@@ -13,9 +13,9 @@
     "string-capitalize": "^1.0.1",
     "vlq": "^0.2.1"
   },
-  "main": "dist/rollup-plugin-node-resolve.cjs.js",
-  "module": "dist/rollup-plugin-node-resolve.es.js",
-  "jsnext:main": "dist/rollup-plugin-node-resolve.es.js",
+  "main": "dist/rollup-plugin-node-resolve-jail.cjs.js",
+  "module": "dist/rollup-plugin-node-resolve-jail.es.js",
+  "jsnext:main": "dist/rollup-plugin-node-resolve-jail.es.js",
   "scripts": {
     "pretest": "rollup -c",
     "test": "mocha",
@@ -33,19 +33,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rollup/rollup-plugin-node-resolve.git"
+    "url": "git+https://github.com/rezzza/rollup-plugin-node-resolve.git"
   },
   "keywords": [
     "rollup",
     "rollup-plugin",
     "es2015",
     "npm",
-    "modules"
+    "modules",
+    "jail",
+    "chroot"
   ],
   "author": "Rich Harris <richard.a.harris@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rollup/rollup-plugin-node-resolve/issues"
+    "url": "https://github.com/rezzza/rollup-plugin-node-resolve/issues"
   },
-  "homepage": "https://github.com/rollup/rollup-plugin-node-resolve#readme"
+  "homepage": "https://github.com/rezzza/rollup-plugin-node-resolve#readme"
 }
